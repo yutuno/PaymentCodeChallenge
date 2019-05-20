@@ -13,6 +13,8 @@ enum Currency: CaseIterable {
     case jpy
     case eur
     case aud
+    case gbp
+    case pln
     
     var code: String {
         switch self {
@@ -20,6 +22,8 @@ enum Currency: CaseIterable {
         case .jpy: return "JPY"
         case .eur: return "EUR"
         case .aud: return "AUD"
+        case .gbp: return "GBP"
+        case .pln: return "PLN"
         }
     }
 }
