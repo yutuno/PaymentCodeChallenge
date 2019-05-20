@@ -8,11 +8,8 @@
 
 import UIKit
 
-class RateCell: UICollectionViewCell {
-
+final class RateCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
-
 }

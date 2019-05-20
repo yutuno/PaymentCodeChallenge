@@ -31,4 +31,15 @@ final class HomeVCTests: XCTestCase {
         
         expect(subject.collectionView).toNot(beNil())
     }
+    
+    func test_セルは6個表示される() {
+        let subject = HomeVC()
+        
+        
+        subject.loadViewIfNeeded()
+        
+        
+        expect(subject.collectionView.numberOfItems(inSection: 0))
+            .to(equal(6))
+    }
 }

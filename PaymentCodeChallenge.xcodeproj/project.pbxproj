@@ -35,6 +35,11 @@
 		D19D53F62292840200B1DE18 /* CurrencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D53F52292840200B1DE18 /* CurrencyTests.swift */; };
 		D19D53F922928D0700B1DE18 /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D53F822928D0700B1DE18 /* Quotes.swift */; };
 		D19FFA952292C2C9005DF77B /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19FFA942292C2C9005DF77B /* UIColor+Extension.swift */; };
+		D19FFA972292C433005DF77B /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19FFA962292C433005DF77B /* UICollectionView+Extension.swift */; };
+		D19FFA992292C451005DF77B /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19FFA982292C451005DF77B /* NSObject+ClassName.swift */; };
+		D19FFA9C2292C498005DF77B /* RateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19FFA9A2292C498005DF77B /* RateCell.swift */; };
+		D19FFA9D2292C498005DF77B /* RateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D19FFA9B2292C498005DF77B /* RateCell.xib */; };
+		D19FFAA02292C53A005DF77B /* ClassNameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19FFA9F2292C53A005DF77B /* ClassNameTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +106,11 @@
 		D19D53F52292840200B1DE18 /* CurrencyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTests.swift; sourceTree = "<group>"; };
 		D19D53F822928D0700B1DE18 /* Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quotes.swift; sourceTree = "<group>"; };
 		D19FFA942292C2C9005DF77B /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		D19FFA962292C433005DF77B /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
+		D19FFA982292C451005DF77B /* NSObject+ClassName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassName.swift"; sourceTree = "<group>"; };
+		D19FFA9A2292C498005DF77B /* RateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateCell.swift; sourceTree = "<group>"; };
+		D19FFA9B2292C498005DF77B /* RateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RateCell.xib; sourceTree = "<group>"; };
+		D19FFA9F2292C53A005DF77B /* ClassNameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassNameTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +187,7 @@
 				D19D53E62292774200B1DE18 /* RateRquestTests.swift */,
 				D19D53F02292804600B1DE18 /* RateResponseTests.swift */,
 				D19D53F52292840200B1DE18 /* CurrencyTests.swift */,
+				D19FFA9E2292C525005DF77B /* Extension */,
 				D13301432292620F0053510E /* Info.plist */,
 			);
 			path = PaymentCodeChallengeTests;
@@ -196,6 +207,8 @@
 			children = (
 				D14D05A422926BC000045374 /* HomeVC.swift */,
 				D14D05A522926BC000045374 /* HomeVC.xib */,
+				D19FFA9A2292C498005DF77B /* RateCell.swift */,
+				D19FFA9B2292C498005DF77B /* RateCell.xib */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -284,6 +297,16 @@
 			isa = PBXGroup;
 			children = (
 				D19FFA942292C2C9005DF77B /* UIColor+Extension.swift */,
+				D19FFA982292C451005DF77B /* NSObject+ClassName.swift */,
+				D19FFA962292C433005DF77B /* UICollectionView+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		D19FFA9E2292C525005DF77B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D19FFA9F2292C53A005DF77B /* ClassNameTests.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -394,6 +417,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D13301372292620F0053510E /* LaunchScreen.storyboard in Resources */,
+				D19FFA9D2292C498005DF77B /* RateCell.xib in Resources */,
 				D14D05A722926BC000045374 /* HomeVC.xib in Resources */,
 				D13301342292620F0053510E /* Assets.xcassets in Resources */,
 			);
@@ -426,12 +450,15 @@
 				D19D53E12292759600B1DE18 /* Request.swift in Sources */,
 				D133012D2292620D0053510E /* AppDelegate.swift in Sources */,
 				D19D53EC2292793D00B1DE18 /* SessionError.swift in Sources */,
+				D19FFA972292C433005DF77B /* UICollectionView+Extension.swift in Sources */,
 				D19D53F42292835300B1DE18 /* Currency.swift in Sources */,
+				D19FFA9C2292C498005DF77B /* RateCell.swift in Sources */,
 				D19FFA952292C2C9005DF77B /* UIColor+Extension.swift in Sources */,
 				D14D05A622926BC000045374 /* HomeVC.swift in Sources */,
 				D19D53F922928D0700B1DE18 /* Quotes.swift in Sources */,
 				D14D05AE22926DA600045374 /* Global.swift in Sources */,
 				D122B4572292B75500323A2C /* CodingKeyMapper.swift in Sources */,
+				D19FFA992292C451005DF77B /* NSObject+ClassName.swift in Sources */,
 				D14D05A922926C0200045374 /* main.swift in Sources */,
 				D19D53E9229278F100B1DE18 /* Session.swift in Sources */,
 			);
@@ -443,6 +470,7 @@
 			files = (
 				D19D53F12292804600B1DE18 /* RateResponseTests.swift in Sources */,
 				D123E47A2292B9EF0038022A /* JSONFixtures.swift in Sources */,
+				D19FFAA02292C53A005DF77B /* ClassNameTests.swift in Sources */,
 				D19D53F62292840200B1DE18 /* CurrencyTests.swift in Sources */,
 				D19D53EF22927E3800B1DE18 /* ResponseJSONFixtures.swift in Sources */,
 				D19D53DC2292729800B1DE18 /* HomeVCTests.swift in Sources */,

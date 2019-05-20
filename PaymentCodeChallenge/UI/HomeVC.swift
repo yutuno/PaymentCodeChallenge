@@ -17,6 +17,10 @@ final class HomeVC: UIViewController {
         super.viewDidLoad()
         
         collectionView.backgroundColor = UIColor(hex: 0xEEEEEE)
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        
+        collectionView.register(cellType: RateCell.self)
         
         let currency: Currency = .gbp
         
@@ -56,6 +60,50 @@ final class HomeVC: UIViewController {
                 print("👻 error handling")
             }
         }
+    }
+}
+
+extension HomeVC: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView,
+                        numberOfItemsInSection section: Int) -> Int {
+        return Currency.allCases.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(
+            with: RateCell.self,
+            for: indexPath
+        )
+        
+        return cell
+    }
+}
+
+extension HomeVC: UICollectionViewDelegateFlowLayout {
+    private var spaceing: CGFloat { return 8.0 }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        insetForSectionAt section: Int) -> UIEdgeInsets {
+        return .init(top: spaceing,
+                     left: spaceing,
+                     bottom: spaceing,
+                     right: spaceing)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return spaceing
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width = collectionView.bounds.width / 2
+        return CGSize(width: width - (spaceing * 3) / 2,
+                      height: 100)
     }
 }
 
