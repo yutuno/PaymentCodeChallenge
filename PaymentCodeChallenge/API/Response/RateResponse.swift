@@ -8,19 +8,19 @@
 
 import Foundation
 
-struct RateResponse: Decodable {
+struct RateResponse<Mapper: CodingKeyMapper>: Decodable {
     let source: Currency
-    let quotes: Quotes
+    let quotes: Quotes<Mapper>
     
     private enum CodingKeys: String, CodingKey {
-        case sourceCurrency = "source"
+        case source
         case quotes
     }
     
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         
-        let code = try container.decode(String.self, forKey: .sourceCurrency)
+        let code = try container.decode(String.self, forKey: .source)
         
         source = Currency.allCases.filter({ $0.code == code }).first!
         quotes = try container.decode(Quotes.self, forKey: .quotes)

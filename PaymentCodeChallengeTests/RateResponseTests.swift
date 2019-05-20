@@ -14,9 +14,9 @@ final class RateResponseTests: XCTestCase {}
 
 // MARK: - JSON Decode
 extension RateResponseTests {
-    func test_正常にDecodeされる() {
+    func test_基準通貨がUSD_正常なJSONデータでDecodeした場合_正しくdecodeされる() {
         let subject = try? JSONDecoder().decode(
-            RateResponse.self,
+            RateResponse<USD>.self,
             from: Response.data()
         )
         
@@ -29,5 +29,25 @@ extension RateResponseTests {
         expect(subject?.quotes.aud).to(equal(1.443515))
         expect(subject?.quotes.gbp).to(equal(0.78523))
         expect(subject?.quotes.pln).to(equal(3.85425))
+    }
+    
+    func test_基準通貨がUSD_sourceがないJSONデータでDecodeした場合_正しくdecodeされない() {
+        let subject = try? JSONDecoder().decode(
+            RateResponse<USD>.self,
+            from: Response.data(hasSource: false)
+        )
+        
+        
+        expect(subject).to(beNil())
+    }
+    
+    func test_基準通貨がUSD_keyが不正なJSONデータでDecodeした場合_正しくdecodeされない() {
+        let subject = try? JSONDecoder().decode(
+            RateResponse<USD>.self,
+            from: Response.data(source: .jpy)
+        )
+        
+        
+        expect(subject).to(beNil())
     }
 }
