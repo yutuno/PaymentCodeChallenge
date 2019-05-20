@@ -21,6 +21,14 @@
 		D14D05B52292725500045374 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D14D05B22292721A00045374 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D14D05B62292725500045374 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D14D05B02292721700045374 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D19D53DC2292729800B1DE18 /* HomeVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D53DB2292729800B1DE18 /* HomeVCTests.swift */; };
+		D19D53E12292759600B1DE18 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D53E02292759600B1DE18 /* Request.swift */; };
+		D19D53E3229275C800B1DE18 /* RateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D53E2229275C800B1DE18 /* RateRequest.swift */; };
+		D19D53E52292760E00B1DE18 /* RateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D53E42292760E00B1DE18 /* RateResponse.swift */; };
+		D19D53E72292774200B1DE18 /* RateRquestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D53E62292774200B1DE18 /* RateRquestTests.swift */; };
+		D19D53E9229278F100B1DE18 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D53E8229278F100B1DE18 /* Session.swift */; };
+		D19D53EC2292793D00B1DE18 /* SessionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D53EB2292793D00B1DE18 /* SessionError.swift */; };
+		D19D53EF22927E3800B1DE18 /* ResponseJSONFixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D53EE22927E3800B1DE18 /* ResponseJSONFixtures.swift */; };
+		D19D53F12292804600B1DE18 /* RateResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D53F02292804600B1DE18 /* RateResponseTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +81,14 @@
 		D14D05B02292721700045374 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		D14D05B22292721A00045374 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		D19D53DB2292729800B1DE18 /* HomeVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVCTests.swift; sourceTree = "<group>"; };
+		D19D53E02292759600B1DE18 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		D19D53E2229275C800B1DE18 /* RateRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateRequest.swift; sourceTree = "<group>"; };
+		D19D53E42292760E00B1DE18 /* RateResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateResponse.swift; sourceTree = "<group>"; };
+		D19D53E62292774200B1DE18 /* RateRquestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateRquestTests.swift; sourceTree = "<group>"; };
+		D19D53E8229278F100B1DE18 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		D19D53EB2292793D00B1DE18 /* SessionError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionError.swift; sourceTree = "<group>"; };
+		D19D53EE22927E3800B1DE18 /* ResponseJSONFixtures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseJSONFixtures.swift; sourceTree = "<group>"; };
+		D19D53F02292804600B1DE18 /* RateResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateResponseTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +144,7 @@
 			children = (
 				D14D05AD22926DA600045374 /* Global.swift */,
 				D14D05AA22926D0200045374 /* AppDelegate */,
+				D19D53DD2292752200B1DE18 /* API */,
 				D14D05A322926B9E00045374 /* UI */,
 				D13301332292620F0053510E /* Assets.xcassets */,
 				D13301352292620F0053510E /* LaunchScreen.storyboard */,
@@ -140,7 +157,10 @@
 		D13301402292620F0053510E /* PaymentCodeChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				D19D53ED22927DC900B1DE18 /* Fixtures */,
 				D19D53DB2292729800B1DE18 /* HomeVCTests.swift */,
+				D19D53E62292774200B1DE18 /* RateRquestTests.swift */,
+				D19D53F02292804600B1DE18 /* RateResponseTests.swift */,
 				D13301432292620F0053510E /* Info.plist */,
 			);
 			path = PaymentCodeChallengeTests;
@@ -180,6 +200,50 @@
 				D14D05B02292721700045374 /* Nimble.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D19D53DD2292752200B1DE18 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				D19D53EA2292792C00B1DE18 /* Session */,
+				D19D53DF2292753E00B1DE18 /* Response */,
+				D19D53DE2292753500B1DE18 /* Request */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		D19D53DE2292753500B1DE18 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				D19D53E02292759600B1DE18 /* Request.swift */,
+				D19D53E2229275C800B1DE18 /* RateRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		D19D53DF2292753E00B1DE18 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				D19D53E42292760E00B1DE18 /* RateResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		D19D53EA2292792C00B1DE18 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				D19D53E8229278F100B1DE18 /* Session.swift */,
+				D19D53EB2292793D00B1DE18 /* SessionError.swift */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		D19D53ED22927DC900B1DE18 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				D19D53EE22927E3800B1DE18 /* ResponseJSONFixtures.swift */,
+			);
+			path = Fixtures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,11 +378,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D19D53E52292760E00B1DE18 /* RateResponse.swift in Sources */,
+				D19D53E3229275C800B1DE18 /* RateRequest.swift in Sources */,
 				D14D05AC22926D1600045374 /* TestAppDelegate.swift in Sources */,
+				D19D53E12292759600B1DE18 /* Request.swift in Sources */,
 				D133012D2292620D0053510E /* AppDelegate.swift in Sources */,
+				D19D53EC2292793D00B1DE18 /* SessionError.swift in Sources */,
 				D14D05A622926BC000045374 /* HomeVC.swift in Sources */,
 				D14D05AE22926DA600045374 /* Global.swift in Sources */,
 				D14D05A922926C0200045374 /* main.swift in Sources */,
+				D19D53E9229278F100B1DE18 /* Session.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,7 +395,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D19D53F12292804600B1DE18 /* RateResponseTests.swift in Sources */,
+				D19D53EF22927E3800B1DE18 /* ResponseJSONFixtures.swift in Sources */,
 				D19D53DC2292729800B1DE18 /* HomeVCTests.swift in Sources */,
+				D19D53E72292774200B1DE18 /* RateRquestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

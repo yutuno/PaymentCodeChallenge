@@ -12,4 +12,8 @@ struct Global {
     static var isUnitTest: Bool {
         return ProcessInfo.processInfo.environment["isUnitTest"] == "true"
     }
+    
+    static var accessKey: String {
+        return "45531adb1d125b1ec652f80f2b2f0de3"
+    }
 }

@@ -13,5 +13,10 @@ final class HomeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // TODO: 後ほど修正
+        Session().send(RateRequest()) { (result) in
+            print("🐹 \(result)")
+        }
     }
 }
