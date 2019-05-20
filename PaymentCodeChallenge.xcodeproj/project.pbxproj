@@ -8,12 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		D133012D2292620D0053510E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D133012C2292620D0053510E /* AppDelegate.swift */; };
-		D133012F2292620D0053510E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D133012E2292620D0053510E /* ViewController.swift */; };
-		D13301322292620D0053510E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D13301302292620D0053510E /* Main.storyboard */; };
 		D13301342292620F0053510E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D13301332292620F0053510E /* Assets.xcassets */; };
 		D13301372292620F0053510E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D13301352292620F0053510E /* LaunchScreen.storyboard */; };
-		D13301422292620F0053510E /* PaymentCodeChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13301412292620F0053510E /* PaymentCodeChallengeTests.swift */; };
 		D133014D2292620F0053510E /* PaymentCodeChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D133014C2292620F0053510E /* PaymentCodeChallengeUITests.swift */; };
+		D14D05A622926BC000045374 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14D05A422926BC000045374 /* HomeVC.swift */; };
+		D14D05A722926BC000045374 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D14D05A522926BC000045374 /* HomeVC.xib */; };
+		D14D05A922926C0200045374 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14D05A822926C0200045374 /* main.swift */; };
+		D14D05AC22926D1600045374 /* TestAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14D05AB22926D1600045374 /* TestAppDelegate.swift */; };
+		D14D05AE22926DA600045374 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14D05AD22926DA600045374 /* Global.swift */; };
+		D14D05B12292721700045374 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D14D05B02292721700045374 /* Nimble.framework */; };
+		D14D05B32292721A00045374 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D14D05B22292721A00045374 /* Quick.framework */; };
+		D14D05B52292725500045374 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D14D05B22292721A00045374 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D14D05B62292725500045374 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D14D05B02292721700045374 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D19D53DC2292729800B1DE18 /* HomeVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D53DB2292729800B1DE18 /* HomeVCTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,20 +40,39 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D14D05B42292723200045374 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D14D05B52292725500045374 /* Quick.framework in CopyFiles */,
+				D14D05B62292725500045374 /* Nimble.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		D13301292292620D0053510E /* PaymentCodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaymentCodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D133012C2292620D0053510E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D133012E2292620D0053510E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D13301312292620D0053510E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D13301332292620F0053510E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D13301362292620F0053510E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D13301382292620F0053510E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D133013D2292620F0053510E /* PaymentCodeChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaymentCodeChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D13301412292620F0053510E /* PaymentCodeChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCodeChallengeTests.swift; sourceTree = "<group>"; };
 		D13301432292620F0053510E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D13301482292620F0053510E /* PaymentCodeChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaymentCodeChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D133014C2292620F0053510E /* PaymentCodeChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCodeChallengeUITests.swift; sourceTree = "<group>"; };
 		D133014E2292620F0053510E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D14D05A422926BC000045374 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		D14D05A522926BC000045374 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		D14D05A822926C0200045374 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		D14D05AB22926D1600045374 /* TestAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppDelegate.swift; sourceTree = "<group>"; };
+		D14D05AD22926DA600045374 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		D14D05B02292721700045374 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		D14D05B22292721A00045374 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		D19D53DB2292729800B1DE18 /* HomeVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVCTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +87,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D14D05B12292721700045374 /* Nimble.framework in Frameworks */,
+				D14D05B32292721A00045374 /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +109,7 @@
 				D13301402292620F0053510E /* PaymentCodeChallengeTests */,
 				D133014B2292620F0053510E /* PaymentCodeChallengeUITests */,
 				D133012A2292620D0053510E /* Products */,
+				D14D05AF2292721700045374 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +126,13 @@
 		D133012B2292620D0053510E /* PaymentCodeChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				D133012C2292620D0053510E /* AppDelegate.swift */,
-				D133012E2292620D0053510E /* ViewController.swift */,
-				D13301302292620D0053510E /* Main.storyboard */,
+				D14D05AD22926DA600045374 /* Global.swift */,
+				D14D05AA22926D0200045374 /* AppDelegate */,
+				D14D05A322926B9E00045374 /* UI */,
 				D13301332292620F0053510E /* Assets.xcassets */,
 				D13301352292620F0053510E /* LaunchScreen.storyboard */,
 				D13301382292620F0053510E /* Info.plist */,
+				D14D05A822926C0200045374 /* main.swift */,
 			);
 			path = PaymentCodeChallenge;
 			sourceTree = "<group>";
@@ -110,7 +140,7 @@
 		D13301402292620F0053510E /* PaymentCodeChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				D13301412292620F0053510E /* PaymentCodeChallengeTests.swift */,
+				D19D53DB2292729800B1DE18 /* HomeVCTests.swift */,
 				D13301432292620F0053510E /* Info.plist */,
 			);
 			path = PaymentCodeChallengeTests;
@@ -123,6 +153,33 @@
 				D133014E2292620F0053510E /* Info.plist */,
 			);
 			path = PaymentCodeChallengeUITests;
+			sourceTree = "<group>";
+		};
+		D14D05A322926B9E00045374 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D14D05A422926BC000045374 /* HomeVC.swift */,
+				D14D05A522926BC000045374 /* HomeVC.xib */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D14D05AA22926D0200045374 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				D133012C2292620D0053510E /* AppDelegate.swift */,
+				D14D05AB22926D1600045374 /* TestAppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		D14D05AF2292721700045374 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D14D05B22292721A00045374 /* Quick.framework */,
+				D14D05B02292721700045374 /* Nimble.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +209,7 @@
 				D13301392292620F0053510E /* Sources */,
 				D133013A2292620F0053510E /* Frameworks */,
 				D133013B2292620F0053510E /* Resources */,
+				D14D05B42292723200045374 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -230,8 +288,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D13301372292620F0053510E /* LaunchScreen.storyboard in Resources */,
+				D14D05A722926BC000045374 /* HomeVC.xib in Resources */,
 				D13301342292620F0053510E /* Assets.xcassets in Resources */,
-				D13301322292620D0053510E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +314,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D133012F2292620D0053510E /* ViewController.swift in Sources */,
+				D14D05AC22926D1600045374 /* TestAppDelegate.swift in Sources */,
 				D133012D2292620D0053510E /* AppDelegate.swift in Sources */,
+				D14D05A622926BC000045374 /* HomeVC.swift in Sources */,
+				D14D05AE22926DA600045374 /* Global.swift in Sources */,
+				D14D05A922926C0200045374 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +326,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D13301422292620F0053510E /* PaymentCodeChallengeTests.swift in Sources */,
+				D19D53DC2292729800B1DE18 /* HomeVCTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +354,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D13301302292620D0053510E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D13301312292620D0053510E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D13301352292620F0053510E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -471,6 +524,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TFJU46RGA2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = PaymentCodeChallengeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -492,6 +549,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TFJU46RGA2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = PaymentCodeChallengeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
