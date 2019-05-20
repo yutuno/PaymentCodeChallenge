@@ -53,27 +53,3 @@ struct Quotes<M: Mapper>: Codable {
         return mapper.first { $0.value == key }?.key ?? String(describing: key)
     }
 }
-
-struct USD: Mapper {
-    static let source: Currency = .usd
-}
-
-struct JPY: Mapper {
-    static let source: Currency = .jpy
-}
-
-struct EUR: Mapper {
-    static let source: Currency = .eur
-}
-
-struct AUD: Mapper {
-    static let source: Currency = .aud
-}
-
-struct GBP: Mapper {
-    static let source: Currency = .gbp
-}
-
-struct PLN: Mapper {
-    static let source: Currency = .pln
-}
