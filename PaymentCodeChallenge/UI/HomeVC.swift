@@ -11,7 +11,7 @@ import UIKit
 final class HomeVC: UIViewController {
     @IBOutlet private(set) weak var collectionView: UICollectionView!
     
-    private var viewModel: ViewModel?
+    private var rateViewModel: RateViewModel?
     
     private let session: SessionProtocol
     
@@ -53,7 +53,7 @@ final class HomeVC: UIViewController {
         session.send(request) { [weak self] (result) in
             switch result {
             case .success(let object):
-                self?.viewModel = ViewModel(
+                self?.rateViewModel = RateViewModel(
                     source: object.source,
                     rates: [
                         Rate(currency: .usd, rate: object.quotes.usd),
@@ -65,7 +65,7 @@ final class HomeVC: UIViewController {
                     ]
                 )
                 
-                print("🐹 viewModel: \(String(describing: self?.viewModel))")
+                print("🐹 viewModel: \(String(describing: self?.rateViewModel))")
                 
                 DispatchQueue.main.async {
                     self?.collectionView.reloadData()
@@ -90,7 +90,7 @@ extension HomeVC: UICollectionViewDataSource {
             for: indexPath
         )
         
-        if let rate = viewModel?.rates[indexPath.item] {
+        if let rate = rateViewModel?.rates[indexPath.item] {
             cell.setUp(rate: rate)
         }
         
@@ -123,15 +123,4 @@ extension HomeVC: UICollectionViewDelegateFlowLayout {
         return CGSize(width: width - (spaceing * 3) / 2,
                       height: 100)
     }
-}
-
-// TODO: 適当なViewModel 後ほど修正する
-struct ViewModel {
-    let source: Currency
-    let rates: [Rate]
-}
-
-struct Rate {
-    let currency: Currency
-    let rate: Double
 }
