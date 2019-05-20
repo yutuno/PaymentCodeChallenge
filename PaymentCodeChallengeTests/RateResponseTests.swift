@@ -21,7 +21,7 @@ extension RateResponseTests {
         )
         
         
-        expect(subject?.source).to(equal("USD"))
+        expect(subject?.source.code).to(equal("USD"))
         
         expect(subject?.quotes.usd).to(equal(1))
         expect(subject?.quotes.jpy).to(equal(110.187001))
