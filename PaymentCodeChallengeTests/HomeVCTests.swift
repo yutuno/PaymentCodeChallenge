@@ -77,6 +77,18 @@ final class HomeVCTests: XCTestCase {
         expect(subject.getCell(item: 2).findLabel(with: "0.89622"))
             .toNot(beNil())
     }
+    
+    func test_通貨変更ボタンが表示される() {
+        let subject = homeVC(
+            session: SessionStub_Success()
+        )
+        
+        
+        subject.loadViewIfNeeded()
+        
+        
+        expect(subject.view.findButton(with: "通貨変更")).toNot(beNil())
+    }
 }
 
 private extension HomeVC {

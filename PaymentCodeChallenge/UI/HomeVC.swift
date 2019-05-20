@@ -11,6 +11,8 @@ import UIKit
 final class HomeVC: UIViewController {
     @IBOutlet private(set) weak var collectionView: UICollectionView!
     
+    @IBOutlet weak var changeButton: UIButton!
+    
     private var rateViewModel: RateViewModel?
     
     private let session: SessionProtocol
@@ -28,6 +30,8 @@ final class HomeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        changeButton.layer.cornerRadius = 10
+        
         collectionView.backgroundColor = UIColor(hex: 0xEEEEEE)
         collectionView.dataSource = self
         collectionView.delegate = self
@@ -36,20 +40,27 @@ final class HomeVC: UIViewController {
         
         let currency: Currency = .usd
         
-        // TODO: 後ほど修正
+        load(currency: currency)
+    }
+    
+    private func load(currency: Currency) {
         switch currency {
         case .usd:
             load(RateRequest<USD>())
         case .jpy:
             load(RateRequest<JPY>())
+        case .eur:
+            load(RateRequest<EUR>())
+        case .aud:
+            load(RateRequest<AUD>())
         case .gbp:
             load(RateRequest<GBP>())
-        default:
-            break
+        case .pln:
+            load(RateRequest<PLN>())
         }
     }
     
-    func load<T: CodingKeyMapper>(_ request: RateRequest<T>) {
+    private func load<T: CodingKeyMapper>(_ request: RateRequest<T>) {
         session.send(request) { [weak self] (result) in
             switch result {
             case .success(let object):
@@ -73,6 +84,12 @@ final class HomeVC: UIViewController {
             case .failure(let error):
                 print("👻 Error: \(error.localizedDescription)")
             }
+        }
+    }
+    
+    @IBAction func tappedButton(_ sender: UIButton) {
+        showActionSheet { [weak self] (currency) in
+            self?.load(currency: currency)
         }
     }
 }

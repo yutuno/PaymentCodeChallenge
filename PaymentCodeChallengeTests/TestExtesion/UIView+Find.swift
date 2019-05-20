@@ -12,7 +12,13 @@ extension UIView {
     func findLabel(with text: String) -> UILabel? {
         return findSubviews { (subview: UILabel) -> Bool in
             subview.text == text
-        }.first
+            }.first
+    }
+    
+    func findButton(with text: String) -> UIButton? {
+        return findSubviews { (subview: UIButton) -> Bool in
+            subview.titleLabel?.text == text
+            }.first
     }
     
     func findSubviews<T: UIView>(with condition: (T) -> Bool) -> [T] {
