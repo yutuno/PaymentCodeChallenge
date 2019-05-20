@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D133012D2292620D0053510E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D133012C2292620D0053510E /* AppDelegate.swift */; };
+		D133012F2292620D0053510E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D133012E2292620D0053510E /* ViewController.swift */; };
+		D13301322292620D0053510E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D13301302292620D0053510E /* Main.storyboard */; };
+		D13301342292620F0053510E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D13301332292620F0053510E /* Assets.xcassets */; };
+		D13301372292620F0053510E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D13301352292620F0053510E /* LaunchScreen.storyboard */; };
+		D13301422292620F0053510E /* PaymentCodeChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13301412292620F0053510E /* PaymentCodeChallengeTests.swift */; };
+		D133014D2292620F0053510E /* PaymentCodeChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D133014C2292620F0053510E /* PaymentCodeChallengeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D133013E2292620F0053510E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D13301212292620D0053510E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D13301282292620D0053510E;
+			remoteInfo = PaymentCodeChallenge;
+		};
+		D13301492292620F0053510E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D13301212292620D0053510E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D13301282292620D0053510E;
+			remoteInfo = PaymentCodeChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D13301292292620D0053510E /* PaymentCodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaymentCodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D133012C2292620D0053510E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D133012E2292620D0053510E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D13301312292620D0053510E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D13301332292620F0053510E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D13301362292620F0053510E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D13301382292620F0053510E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D133013D2292620F0053510E /* PaymentCodeChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaymentCodeChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D13301412292620F0053510E /* PaymentCodeChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCodeChallengeTests.swift; sourceTree = "<group>"; };
+		D13301432292620F0053510E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D13301482292620F0053510E /* PaymentCodeChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaymentCodeChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D133014C2292620F0053510E /* PaymentCodeChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCodeChallengeUITests.swift; sourceTree = "<group>"; };
+		D133014E2292620F0053510E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D13301262292620D0053510E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D133013A2292620F0053510E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D13301452292620F0053510E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D13301202292620D0053510E = {
+			isa = PBXGroup;
+			children = (
+				D133012B2292620D0053510E /* PaymentCodeChallenge */,
+				D13301402292620F0053510E /* PaymentCodeChallengeTests */,
+				D133014B2292620F0053510E /* PaymentCodeChallengeUITests */,
+				D133012A2292620D0053510E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D133012A2292620D0053510E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D13301292292620D0053510E /* PaymentCodeChallenge.app */,
+				D133013D2292620F0053510E /* PaymentCodeChallengeTests.xctest */,
+				D13301482292620F0053510E /* PaymentCodeChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D133012B2292620D0053510E /* PaymentCodeChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				D133012C2292620D0053510E /* AppDelegate.swift */,
+				D133012E2292620D0053510E /* ViewController.swift */,
+				D13301302292620D0053510E /* Main.storyboard */,
+				D13301332292620F0053510E /* Assets.xcassets */,
+				D13301352292620F0053510E /* LaunchScreen.storyboard */,
+				D13301382292620F0053510E /* Info.plist */,
+			);
+			path = PaymentCodeChallenge;
+			sourceTree = "<group>";
+		};
+		D13301402292620F0053510E /* PaymentCodeChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				D13301412292620F0053510E /* PaymentCodeChallengeTests.swift */,
+				D13301432292620F0053510E /* Info.plist */,
+			);
+			path = PaymentCodeChallengeTests;
+			sourceTree = "<group>";
+		};
+		D133014B2292620F0053510E /* PaymentCodeChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D133014C2292620F0053510E /* PaymentCodeChallengeUITests.swift */,
+				D133014E2292620F0053510E /* Info.plist */,
+			);
+			path = PaymentCodeChallengeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D13301282292620D0053510E /* PaymentCodeChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D13301512292620F0053510E /* Build configuration list for PBXNativeTarget "PaymentCodeChallenge" */;
+			buildPhases = (
+				D13301252292620D0053510E /* Sources */,
+				D13301262292620D0053510E /* Frameworks */,
+				D13301272292620D0053510E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PaymentCodeChallenge;
+			productName = PaymentCodeChallenge;
+			productReference = D13301292292620D0053510E /* PaymentCodeChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D133013C2292620F0053510E /* PaymentCodeChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D13301542292620F0053510E /* Build configuration list for PBXNativeTarget "PaymentCodeChallengeTests" */;
+			buildPhases = (
+				D13301392292620F0053510E /* Sources */,
+				D133013A2292620F0053510E /* Frameworks */,
+				D133013B2292620F0053510E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D133013F2292620F0053510E /* PBXTargetDependency */,
+			);
+			name = PaymentCodeChallengeTests;
+			productName = PaymentCodeChallengeTests;
+			productReference = D133013D2292620F0053510E /* PaymentCodeChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D13301472292620F0053510E /* PaymentCodeChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D13301572292620F0053510E /* Build configuration list for PBXNativeTarget "PaymentCodeChallengeUITests" */;
+			buildPhases = (
+				D13301442292620F0053510E /* Sources */,
+				D13301452292620F0053510E /* Frameworks */,
+				D13301462292620F0053510E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D133014A2292620F0053510E /* PBXTargetDependency */,
+			);
+			name = PaymentCodeChallengeUITests;
+			productName = PaymentCodeChallengeUITests;
+			productReference = D13301482292620F0053510E /* PaymentCodeChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D13301212292620D0053510E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = yuto;
+				TargetAttributes = {
+					D13301282292620D0053510E = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					D133013C2292620F0053510E = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = D13301282292620D0053510E;
+					};
+					D13301472292620F0053510E = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = D13301282292620D0053510E;
+					};
+				};
+			};
+			buildConfigurationList = D13301242292620D0053510E /* Build configuration list for PBXProject "PaymentCodeChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D13301202292620D0053510E;
+			productRefGroup = D133012A2292620D0053510E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D13301282292620D0053510E /* PaymentCodeChallenge */,
+				D133013C2292620F0053510E /* PaymentCodeChallengeTests */,
+				D13301472292620F0053510E /* PaymentCodeChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D13301272292620D0053510E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D13301372292620F0053510E /* LaunchScreen.storyboard in Resources */,
+				D13301342292620F0053510E /* Assets.xcassets in Resources */,
+				D13301322292620D0053510E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D133013B2292620F0053510E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D13301462292620F0053510E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D13301252292620D0053510E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D133012F2292620D0053510E /* ViewController.swift in Sources */,
+				D133012D2292620D0053510E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D13301392292620F0053510E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D13301422292620F0053510E /* PaymentCodeChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D13301442292620F0053510E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D133014D2292620F0053510E /* PaymentCodeChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D133013F2292620F0053510E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D13301282292620D0053510E /* PaymentCodeChallenge */;
+			targetProxy = D133013E2292620F0053510E /* PBXContainerItemProxy */;
+		};
+		D133014A2292620F0053510E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D13301282292620D0053510E /* PaymentCodeChallenge */;
+			targetProxy = D13301492292620F0053510E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D13301302292620D0053510E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D13301312292620D0053510E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D13301352292620F0053510E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D13301362292620F0053510E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D133014F2292620F0053510E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D13301502292620F0053510E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D13301522292620F0053510E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TFJU46RGA2;
+				INFOPLIST_FILE = PaymentCodeChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yuto.PaymentCodeChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D13301532292620F0053510E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TFJU46RGA2;
+				INFOPLIST_FILE = PaymentCodeChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yuto.PaymentCodeChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D13301552292620F0053510E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TFJU46RGA2;
+				INFOPLIST_FILE = PaymentCodeChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yuto.PaymentCodeChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PaymentCodeChallenge.app/PaymentCodeChallenge";
+			};
+			name = Debug;
+		};
+		D13301562292620F0053510E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TFJU46RGA2;
+				INFOPLIST_FILE = PaymentCodeChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yuto.PaymentCodeChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PaymentCodeChallenge.app/PaymentCodeChallenge";
+			};
+			name = Release;
+		};
+		D13301582292620F0053510E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TFJU46RGA2;
+				INFOPLIST_FILE = PaymentCodeChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yuto.PaymentCodeChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PaymentCodeChallenge;
+			};
+			name = Debug;
+		};
+		D13301592292620F0053510E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TFJU46RGA2;
+				INFOPLIST_FILE = PaymentCodeChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yuto.PaymentCodeChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PaymentCodeChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D13301242292620D0053510E /* Build configuration list for PBXProject "PaymentCodeChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D133014F2292620F0053510E /* Debug */,
+				D13301502292620F0053510E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D13301512292620F0053510E /* Build configuration list for PBXNativeTarget "PaymentCodeChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D13301522292620F0053510E /* Debug */,
+				D13301532292620F0053510E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D13301542292620F0053510E /* Build configuration list for PBXNativeTarget "PaymentCodeChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D13301552292620F0053510E /* Debug */,
+				D13301562292620F0053510E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D13301572292620F0053510E /* Build configuration list for PBXNativeTarget "PaymentCodeChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D13301582292620F0053510E /* Debug */,
+				D13301592292620F0053510E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D13301212292620D0053510E /* Project object */;
+}
