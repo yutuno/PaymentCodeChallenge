@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Quotes<Mapper: CodingKeyMapper>: Codable {
+struct Quotes<M: Mapper>: Codable {
     let usd: Double
     let jpy: Double
     let eur: Double
@@ -25,83 +25,55 @@ struct Quotes<Mapper: CodingKeyMapper>: Codable {
         case pln
         
         init?(stringValue: String) {
-            guard let k = Mapper.key(stringValue) else { return nil }
-            self = k
+            guard let key = key(stringValue) else { return nil }
+            self = key
         }
+        
         var stringValue: String {
-            return Mapper.stringValue(self)
+            return string(self)
         }
+    }
+    
+    static var mapper: [String: CodingKeys] {
+        return [
+            "\(M.source.code)USD": .usd,
+            "\(M.source.code)JPY": .jpy,
+            "\(M.source.code)EUR": .eur,
+            "\(M.source.code)AUD": .aud,
+            "\(M.source.code)GBP": .gbp,
+            "\(M.source.code)PLN": .pln
+        ]
+    }
+    
+    static func key(_ stringValue: String) -> CodingKeys? {
+        return mapper[stringValue]
+    }
+    
+    static func string(_ key: CodingKeys) -> String {
+        return mapper.first { $0.value == key }?.key ?? String(describing: key)
     }
 }
 
-struct USD: CodingKeyMapper {
-    static let source = "USD"
-    static let mapper: [String: Quotes<USD>.CodingKeys] = [
-        "\(source)USD": .usd,
-        "\(source)JPY": .jpy,
-        "\(source)EUR": .eur,
-        "\(source)AUD": .aud,
-        "\(source)GBP": .gbp,
-        "\(source)PLN": .pln
-    ]
+struct USD: Mapper {
+    static let source: Currency = .usd
 }
 
-struct JPY: CodingKeyMapper {
-    static let source = "JPY"
-    static let mapper: [String: Quotes<JPY>.CodingKeys] = [
-        "\(source)USD": .usd,
-        "\(source)JPY": .jpy,
-        "\(source)EUR": .eur,
-        "\(source)AUD": .aud,
-        "\(source)GBP": .gbp,
-        "\(source)PLN": .pln
-    ]
+struct JPY: Mapper {
+    static let source: Currency = .jpy
 }
 
-struct EUR: CodingKeyMapper {
-    static let source = "EUR"
-    static let mapper: [String: Quotes<EUR>.CodingKeys] = [
-        "\(source)USD": .usd,
-        "\(source)JPY": .jpy,
-        "\(source)EUR": .eur,
-        "\(source)AUD": .aud,
-        "\(source)GBP": .gbp,
-        "\(source)PLN": .pln
-    ]
+struct EUR: Mapper {
+    static let source: Currency = .eur
 }
 
-struct AUD: CodingKeyMapper {
-    static let source = "AUD"
-    static let mapper: [String: Quotes<AUD>.CodingKeys] = [
-        "\(source)USD": .usd,
-        "\(source)JPY": .jpy,
-        "\(source)EUR": .eur,
-        "\(source)AUD": .aud,
-        "\(source)GBP": .gbp,
-        "\(source)PLN": .pln
-    ]
+struct AUD: Mapper {
+    static let source: Currency = .aud
 }
 
-struct GBP: CodingKeyMapper {
-    static let source = "GBP"
-    static let mapper: [String: Quotes<GBP>.CodingKeys] = [
-        "\(source)USD": .usd,
-        "\(source)JPY": .jpy,
-        "\(source)EUR": .eur,
-        "\(source)AUD": .aud,
-        "\(source)GBP": .gbp,
-        "\(source)PLN": .pln
-    ]
+struct GBP: Mapper {
+    static let source: Currency = .gbp
 }
 
-struct PLN: CodingKeyMapper {
-    static let source = "PLN"
-    static let mapper: [String: Quotes<PLN>.CodingKeys] = [
-        "\(source)USD": .usd,
-        "\(source)JPY": .jpy,
-        "\(source)EUR": .eur,
-        "\(source)AUD": .aud,
-        "\(source)GBP": .gbp,
-        "\(source)PLN": .pln
-    ]
+struct PLN: Mapper {
+    static let source: Currency = .pln
 }

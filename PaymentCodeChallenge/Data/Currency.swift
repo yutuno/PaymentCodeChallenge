@@ -26,4 +26,15 @@ enum Currency: CaseIterable {
         case .pln: return "PLN"
         }
     }
+    
+    var info: (country: String, jpUnit: String) {
+        switch self {
+        case .usd: return (country: "アメリカ", jpUnit: "米ドル")
+        case .jpy: return (country: "日本", jpUnit: "円")
+        case .eur: return (country: "欧州", jpUnit: "ユーロ")
+        case .aud: return (country: "オーストラリア", jpUnit: "豪ドル")
+        case .gbp: return (country: "イギリス", jpUnit: "ポンド")
+        case .pln: return (country: "ポーランド", jpUnit: "ズウォティ")
+        }
+    }
 }

@@ -8,8 +8,8 @@
 
 import Foundation
 
-struct RateRequest<Mapper: CodingKeyMapper>: Request {
-    typealias Response = RateResponse<Mapper>
+struct RateRequest<M: Mapper>: Request {
+    typealias Response = RateResponse<M>
     
     let path: String = "/live"
     
@@ -18,7 +18,7 @@ struct RateRequest<Mapper: CodingKeyMapper>: Request {
             "access_key": Global.accessKey
         ]
         
-        params["source"] = Mapper.source
+        params["source"] = M.source.code
         
         return params
     }

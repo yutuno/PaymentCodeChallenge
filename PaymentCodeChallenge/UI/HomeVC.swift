@@ -65,7 +65,7 @@ final class HomeVC: UIViewController {
         }
     }
     
-    private func load<T: CodingKeyMapper>(_ request: RateRequest<T>) {
+    private func load<M: Mapper>(_ request: RateRequest<M>) {
         session.send(request) { [weak self] (result) in
             switch result {
             case .success(let object):

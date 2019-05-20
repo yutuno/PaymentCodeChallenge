@@ -8,9 +8,9 @@
 
 import Foundation
 
-struct RateResponse<Mapper: CodingKeyMapper>: Decodable {
+struct RateResponse<M: Mapper>: Decodable {
     let source: Currency
-    let quotes: Quotes<Mapper>
+    let quotes: Quotes<M>
     
     private enum CodingKeys: String, CodingKey {
         case source
