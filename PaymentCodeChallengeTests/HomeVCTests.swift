@@ -60,7 +60,7 @@ final class HomeVCTests: XCTestCase {
             .to(equal(6))
     }
     
-    func test_為替レートのセルが正しく表示される() {
+    func test_為替レートデータを取得した場合_為替レートのセルが正しく表示される() {
         let subject = homeVC(
             session: SessionStub_Success()
         )
@@ -86,6 +86,21 @@ final class HomeVCTests: XCTestCase {
             .toNot(beNil())
         expect(subject.getCell(item: 2).findLabel(with: "0.89622"))
             .toNot(beNil())
+    }
+    
+    func test_為替レートデータを取得した場合_基準通貨のラベルが正しく表示される() {
+        let subject = homeVC(
+            session: SessionStub_Success()
+        )
+        
+        
+        subject.loadViewIfNeeded()
+        
+        
+        expect(subject.collectionView.numberOfItems(inSection: 0))
+            .toEventually(equal(6))
+        
+        expect(subject.sourceLabel.text).toEventually(equal("USD"))
     }
     
     func test_通貨変更ボタンが表示される() {

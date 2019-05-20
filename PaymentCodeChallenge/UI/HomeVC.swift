@@ -11,6 +11,7 @@ import UIKit
 final class HomeVC: UIViewController {
     @IBOutlet private(set) weak var collectionView: UICollectionView!
     
+    @IBOutlet weak var sourceLabel: UILabel!
     @IBOutlet weak var changeButton: UIButton!
     
     private var rateViewModel: RateViewModel?
@@ -83,6 +84,7 @@ final class HomeVC: UIViewController {
                 print("🐹 viewModel: \(String(describing: self?.rateViewModel))")
                 
                 DispatchQueue.main.async {
+                    self?.sourceLabel.text = object.source.code
                     self?.collectionView.reloadData()
                 }
             case .failure(let error):

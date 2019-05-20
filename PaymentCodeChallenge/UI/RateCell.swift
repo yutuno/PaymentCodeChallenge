@@ -15,6 +15,9 @@ final class RateCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        currencyLabel.text = "---"
+        rateLabel.text = "---"
     }
     
     func setUp(rate: Rate) {
