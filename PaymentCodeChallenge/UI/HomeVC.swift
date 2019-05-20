@@ -30,6 +30,10 @@ final class HomeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationItem.title = "為替レート"
+        navigationItem.largeTitleDisplayMode = .always
+        navigationController?.navigationBar.prefersLargeTitles = true
+        
         changeButton.layer.cornerRadius = 10
         
         collectionView.backgroundColor = UIColor(hex: 0xEEEEEE)

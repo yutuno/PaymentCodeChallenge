@@ -39,6 +39,16 @@ final class HomeVCTests: XCTestCase {
         expect(subject.collectionView).toNot(beNil())
     }
     
+    func test_ナビゲーションにタイトルが表示される() {
+        let subject = homeVC()
+        
+        
+        subject.loadViewIfNeeded()
+        
+        
+        expect(subject.navigationItem.title).to(equal("為替レート"))
+    }
+    
     func test_セルは6個表示される() {
         let subject = homeVC()
         
