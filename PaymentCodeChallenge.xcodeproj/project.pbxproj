@@ -40,6 +40,8 @@
 		D19FFA9C2292C498005DF77B /* RateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19FFA9A2292C498005DF77B /* RateCell.swift */; };
 		D19FFA9D2292C498005DF77B /* RateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D19FFA9B2292C498005DF77B /* RateCell.xib */; };
 		D19FFAA02292C53A005DF77B /* ClassNameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19FFA9F2292C53A005DF77B /* ClassNameTests.swift */; };
+		D19FFAA32292CDB1005DF77B /* SessionTestDoubles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19FFAA22292CDB1005DF77B /* SessionTestDoubles.swift */; };
+		D19FFAA82292D5F5005DF77B /* UIView+Find.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19FFAA72292D5F5005DF77B /* UIView+Find.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +113,8 @@
 		D19FFA9A2292C498005DF77B /* RateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateCell.swift; sourceTree = "<group>"; };
 		D19FFA9B2292C498005DF77B /* RateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RateCell.xib; sourceTree = "<group>"; };
 		D19FFA9F2292C53A005DF77B /* ClassNameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassNameTests.swift; sourceTree = "<group>"; };
+		D19FFAA22292CDB1005DF77B /* SessionTestDoubles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionTestDoubles.swift; sourceTree = "<group>"; };
+		D19FFAA72292D5F5005DF77B /* UIView+Find.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Find.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,11 +187,13 @@
 			isa = PBXGroup;
 			children = (
 				D19D53ED22927DC900B1DE18 /* Fixtures */,
+				D19FFAA12292CD5B005DF77B /* TestDoubles */,
 				D19D53DB2292729800B1DE18 /* HomeVCTests.swift */,
 				D19D53E62292774200B1DE18 /* RateRquestTests.swift */,
 				D19D53F02292804600B1DE18 /* RateResponseTests.swift */,
 				D19D53F52292840200B1DE18 /* CurrencyTests.swift */,
 				D19FFA9E2292C525005DF77B /* Extension */,
+				D19FFAA62292D5C6005DF77B /* TestExtesion */,
 				D13301432292620F0053510E /* Info.plist */,
 			);
 			path = PaymentCodeChallengeTests;
@@ -309,6 +315,22 @@
 				D19FFA9F2292C53A005DF77B /* ClassNameTests.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		D19FFAA12292CD5B005DF77B /* TestDoubles */ = {
+			isa = PBXGroup;
+			children = (
+				D19FFAA22292CDB1005DF77B /* SessionTestDoubles.swift */,
+			);
+			path = TestDoubles;
+			sourceTree = "<group>";
+		};
+		D19FFAA62292D5C6005DF77B /* TestExtesion */ = {
+			isa = PBXGroup;
+			children = (
+				D19FFAA72292D5F5005DF77B /* UIView+Find.swift */,
+			);
+			path = TestExtesion;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -471,8 +493,10 @@
 				D19D53F12292804600B1DE18 /* RateResponseTests.swift in Sources */,
 				D123E47A2292B9EF0038022A /* JSONFixtures.swift in Sources */,
 				D19FFAA02292C53A005DF77B /* ClassNameTests.swift in Sources */,
+				D19FFAA82292D5F5005DF77B /* UIView+Find.swift in Sources */,
 				D19D53F62292840200B1DE18 /* CurrencyTests.swift in Sources */,
 				D19D53EF22927E3800B1DE18 /* ResponseJSONFixtures.swift in Sources */,
+				D19FFAA32292CDB1005DF77B /* SessionTestDoubles.swift in Sources */,
 				D19D53DC2292729800B1DE18 /* HomeVCTests.swift in Sources */,
 				D19D53E72292774200B1DE18 /* RateRquestTests.swift in Sources */,
 			);

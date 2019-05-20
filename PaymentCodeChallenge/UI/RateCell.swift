@@ -9,7 +9,16 @@
 import UIKit
 
 final class RateCell: UICollectionViewCell {
+    
+    @IBOutlet private weak var currencyLabel: UILabel!
+    @IBOutlet private weak var rateLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+    }
+    
+    func setUp(rate: Rate) {
+        currencyLabel.text = rate.currency.code
+        rateLabel.text = "\(rate.rate)"
     }
 }

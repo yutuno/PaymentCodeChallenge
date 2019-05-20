@@ -64,6 +64,10 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="169" height="107"/>
+            <connections>
+                <outlet property="currencyLabel" destination="cJa-ie-9DX" id="FBf-Oq-azW"/>
+                <outlet property="rateLabel" destination="POk-JI-6nU" id="aTj-1B-Cvl"/>
+            </connections>
             <point key="canvasLocation" x="223.91304347826087" y="136.94196428571428"/>
         </collectionViewCell>
     </objects>

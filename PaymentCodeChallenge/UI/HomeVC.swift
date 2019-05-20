@@ -13,6 +13,18 @@ final class HomeVC: UIViewController {
     
     private var viewModel: ViewModel?
     
+    private let session: SessionProtocol
+    
+    init(session: SessionProtocol = Session()) {
+        self.session = session
+        
+        super.init(nibName: HomeVC.className, bundle: .main)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,7 +34,7 @@ final class HomeVC: UIViewController {
         
         collectionView.register(cellType: RateCell.self)
         
-        let currency: Currency = .gbp
+        let currency: Currency = .usd
         
         // TODO: 後ほど修正
         switch currency {
@@ -38,7 +50,7 @@ final class HomeVC: UIViewController {
     }
     
     func load<T: CodingKeyMapper>(_ request: RateRequest<T>) {
-        Session().send(request) { [weak self] (result) in
+        session.send(request) { [weak self] (result) in
             switch result {
             case .success(let object):
                 self?.viewModel = ViewModel(
@@ -55,9 +67,11 @@ final class HomeVC: UIViewController {
                 
                 print("🐹 viewModel: \(String(describing: self?.viewModel))")
                 
-                break
-            case .failure:
-                print("👻 error handling")
+                DispatchQueue.main.async {
+                    self?.collectionView.reloadData()
+                }
+            case .failure(let error):
+                print("👻 Error: \(error.localizedDescription)")
             }
         }
     }
@@ -75,6 +89,10 @@ extension HomeVC: UICollectionViewDataSource {
             with: RateCell.self,
             for: indexPath
         )
+        
+        if let rate = viewModel?.rates[indexPath.item] {
+            cell.setUp(rate: rate)
+        }
         
         return cell
     }

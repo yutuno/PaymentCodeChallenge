@@ -8,7 +8,15 @@
 
 import Foundation
 
-final class Session {
+protocol SessionProtocol {
+    @discardableResult
+    func send<T: Request>(
+        _ request: T,
+        completion: @escaping (Result<T.Response, Error>) -> Void
+        ) -> URLSessionTask?
+}
+
+final class Session: SessionProtocol {
     private let session: URLSession
     
     init(session: URLSession = .shared) {
