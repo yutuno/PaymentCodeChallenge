@@ -22,5 +22,12 @@ extension RateResponseTests {
         
         
         expect(subject?.source).to(equal("USD"))
+        
+        expect(subject?.quotes.usd).to(equal(1))
+        expect(subject?.quotes.jpy).to(equal(110.187001))
+        expect(subject?.quotes.eur).to(equal(0.89622))
+        expect(subject?.quotes.aud).to(equal(1.443515))
+        expect(subject?.quotes.gbp).to(equal(0.78523))
+        expect(subject?.quotes.pln).to(equal(3.85425))
     }
 }
