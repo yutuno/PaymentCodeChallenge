@@ -16,6 +16,8 @@ final class HomeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        collectionView.backgroundColor = UIColor(hex: 0xEEEEEE)
+        
         let currency: Currency = .gbp
         
         // TODO: 後ほど修正

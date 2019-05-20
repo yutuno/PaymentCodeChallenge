@@ -34,6 +34,7 @@
 		D19D53F42292835300B1DE18 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D53F32292835300B1DE18 /* Currency.swift */; };
 		D19D53F62292840200B1DE18 /* CurrencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D53F52292840200B1DE18 /* CurrencyTests.swift */; };
 		D19D53F922928D0700B1DE18 /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D53F822928D0700B1DE18 /* Quotes.swift */; };
+		D19FFA952292C2C9005DF77B /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19FFA942292C2C9005DF77B /* UIColor+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		D19D53F32292835300B1DE18 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		D19D53F52292840200B1DE18 /* CurrencyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTests.swift; sourceTree = "<group>"; };
 		D19D53F822928D0700B1DE18 /* Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quotes.swift; sourceTree = "<group>"; };
+		D19FFA942292C2C9005DF77B /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 				D19D53DD2292752200B1DE18 /* API */,
 				D14D05A322926B9E00045374 /* UI */,
 				D19D53F22292832C00B1DE18 /* Data */,
+				D19FFA932292C2B0005DF77B /* Extension */,
 				D13301332292620F0053510E /* Assets.xcassets */,
 				D13301352292620F0053510E /* LaunchScreen.storyboard */,
 				D13301382292620F0053510E /* Info.plist */,
@@ -275,6 +278,14 @@
 				D122B4562292B75500323A2C /* CodingKeyMapper.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		D19FFA932292C2B0005DF77B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D19FFA942292C2C9005DF77B /* UIColor+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -416,6 +427,7 @@
 				D133012D2292620D0053510E /* AppDelegate.swift in Sources */,
 				D19D53EC2292793D00B1DE18 /* SessionError.swift in Sources */,
 				D19D53F42292835300B1DE18 /* Currency.swift in Sources */,
+				D19FFA952292C2C9005DF77B /* UIColor+Extension.swift in Sources */,
 				D14D05A622926BC000045374 /* HomeVC.swift in Sources */,
 				D19D53F922928D0700B1DE18 /* Quotes.swift in Sources */,
 				D14D05AE22926DA600045374 /* Global.swift in Sources */,

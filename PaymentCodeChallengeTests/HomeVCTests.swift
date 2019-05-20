@@ -11,6 +11,17 @@ import Nimble
 @testable import PaymentCodeChallenge
 
 final class HomeVCTests: XCTestCase {
+    func test_collectionViewの背景色はEEEEEE() {
+        let subject = HomeVC()
+        
+        
+        subject.loadViewIfNeeded()
+        
+        
+        expect(subject.collectionView.backgroundColor)
+            .to(equal(UIColor(hex: 0xEEEEEE)))
+    }
+    
     func test_viewDidLoad画面上にcollectionViewが存在する() {
         let subject = HomeVC()
         
