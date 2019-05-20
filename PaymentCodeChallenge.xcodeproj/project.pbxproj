@@ -29,6 +29,8 @@
 		D19D53EC2292793D00B1DE18 /* SessionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D53EB2292793D00B1DE18 /* SessionError.swift */; };
 		D19D53EF22927E3800B1DE18 /* ResponseJSONFixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D53EE22927E3800B1DE18 /* ResponseJSONFixtures.swift */; };
 		D19D53F12292804600B1DE18 /* RateResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D53F02292804600B1DE18 /* RateResponseTests.swift */; };
+		D19D53F42292835300B1DE18 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D53F32292835300B1DE18 /* Currency.swift */; };
+		D19D53F62292840200B1DE18 /* CurrencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D53F52292840200B1DE18 /* CurrencyTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +91,8 @@
 		D19D53EB2292793D00B1DE18 /* SessionError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionError.swift; sourceTree = "<group>"; };
 		D19D53EE22927E3800B1DE18 /* ResponseJSONFixtures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseJSONFixtures.swift; sourceTree = "<group>"; };
 		D19D53F02292804600B1DE18 /* RateResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateResponseTests.swift; sourceTree = "<group>"; };
+		D19D53F32292835300B1DE18 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		D19D53F52292840200B1DE18 /* CurrencyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +150,7 @@
 				D14D05AA22926D0200045374 /* AppDelegate */,
 				D19D53DD2292752200B1DE18 /* API */,
 				D14D05A322926B9E00045374 /* UI */,
+				D19D53F22292832C00B1DE18 /* Data */,
 				D13301332292620F0053510E /* Assets.xcassets */,
 				D13301352292620F0053510E /* LaunchScreen.storyboard */,
 				D13301382292620F0053510E /* Info.plist */,
@@ -161,6 +166,7 @@
 				D19D53DB2292729800B1DE18 /* HomeVCTests.swift */,
 				D19D53E62292774200B1DE18 /* RateRquestTests.swift */,
 				D19D53F02292804600B1DE18 /* RateResponseTests.swift */,
+				D19D53F52292840200B1DE18 /* CurrencyTests.swift */,
 				D13301432292620F0053510E /* Info.plist */,
 			);
 			path = PaymentCodeChallengeTests;
@@ -244,6 +250,14 @@
 				D19D53EE22927E3800B1DE18 /* ResponseJSONFixtures.swift */,
 			);
 			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		D19D53F22292832C00B1DE18 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D19D53F32292835300B1DE18 /* Currency.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -384,6 +398,7 @@
 				D19D53E12292759600B1DE18 /* Request.swift in Sources */,
 				D133012D2292620D0053510E /* AppDelegate.swift in Sources */,
 				D19D53EC2292793D00B1DE18 /* SessionError.swift in Sources */,
+				D19D53F42292835300B1DE18 /* Currency.swift in Sources */,
 				D14D05A622926BC000045374 /* HomeVC.swift in Sources */,
 				D14D05AE22926DA600045374 /* Global.swift in Sources */,
 				D14D05A922926C0200045374 /* main.swift in Sources */,
@@ -396,6 +411,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D19D53F12292804600B1DE18 /* RateResponseTests.swift in Sources */,
+				D19D53F62292840200B1DE18 /* CurrencyTests.swift in Sources */,
 				D19D53EF22927E3800B1DE18 /* ResponseJSONFixtures.swift in Sources */,
 				D19D53DC2292729800B1DE18 /* HomeVCTests.swift in Sources */,
 				D19D53E72292774200B1DE18 /* RateRquestTests.swift in Sources */,
